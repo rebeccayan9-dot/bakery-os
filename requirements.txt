@@ -1,6 +1,0 @@
-# TECHIN 510 - Week 7: Integrating AI and LLM Features
-# Tested with Python 3.11+
-
-streamlit==1.41.1          # Web app framework -- turns Python scripts into interactive UIs
-anthropic==0.42.0          # Official Anthropic SDK -- lets you call Claude from Python
-python-dotenv==1.0.1       # Loads environment variables from .env files (keeps API keys out of code)
