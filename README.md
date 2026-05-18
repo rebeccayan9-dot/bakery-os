@@ -3,6 +3,12 @@
 A personal home-baking assistant: a small set of agentic skills wrapped around
 a Python toolkit and a Next.js dashboard. Built for one cook, not a storefront.
 
+**🌐 Live demo:** https://bakery-os-six.vercel.app/
+
+The Vercel deploy runs in read-only **demo mode** — pages render with real data
+but interactive features (scale, plan, shopping, capture) require the Python
+CLI and only work when you clone and run locally (see [Setup](#setup) below).
+
 ---
 
 ## 1. Purpose of this agentic OS
