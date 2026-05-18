@@ -6,6 +6,8 @@ __pycache__/
 node_modules/
 .next/
 out/
+web/next-env.d.ts
+web/tsconfig.tsbuildinfo
 web/public/uploads/*
 !web/public/uploads/.gitkeep
 .DS_Store
