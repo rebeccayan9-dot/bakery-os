@@ -1,0 +1,136 @@
+{
+  "sourdough-loaf": {
+    "name": "Country Sourdough Loaf",
+    "yield": {"count": 1, "unit": "loaf", "weight_g": 900},
+    "ingredients": [
+      {"item": "bread-flour",       "qty": 450, "unit": "g"},
+      {"item": "whole-wheat-flour", "qty":  50, "unit": "g"},
+      {"item": "water",             "qty": 375, "unit": "ml"},
+      {"item": "starter",           "qty": 100, "unit": "g"},
+      {"item": "salt",              "qty":  10, "unit": "g"}
+    ],
+    "steps": [
+      {"name": "mix",          "duration_min": 15,  "active": true},
+      {"name": "autolyse",     "duration_min": 30,  "active": false},
+      {"name": "bulk ferment", "duration_min": 240, "active": false},
+      {"name": "shape",        "duration_min": 15,  "active": true},
+      {"name": "cold proof",   "duration_min": 720, "active": false},
+      {"name": "bake",         "duration_min": 45,  "active": false, "oven": true, "oven_temp_f": 475}
+    ],
+    "tags": ["bread", "sourdough", "signature"]
+  },
+  "chocolate-chip-cookies": {
+    "name": "Brown Butter Chocolate Chip Cookies",
+    "yield": {"count": 24, "unit": "cookies", "weight_g": 60},
+    "ingredients": [
+      {"item": "ap-flour",         "qty": 340, "unit": "g"},
+      {"item": "butter",           "qty": 225, "unit": "g"},
+      {"item": "brown-sugar",      "qty": 200, "unit": "g"},
+      {"item": "granulated-sugar", "qty": 100, "unit": "g"},
+      {"item": "eggs",             "qty":   2, "unit": "each"},
+      {"item": "vanilla",          "qty":  10, "unit": "ml"},
+      {"item": "salt",             "qty":   6, "unit": "g"},
+      {"item": "baking-soda",      "qty":   5, "unit": "g"},
+      {"item": "chocolate-chips",  "qty": 300, "unit": "g"}
+    ],
+    "steps": [
+      {"name": "brown butter", "duration_min": 12, "active": true},
+      {"name": "cool butter",  "duration_min": 20, "active": false},
+      {"name": "mix dough",    "duration_min": 10, "active": true},
+      {"name": "chill",        "duration_min": 60, "active": false},
+      {"name": "portion",      "duration_min": 10, "active": true},
+      {"name": "bake",         "duration_min": 14, "active": false, "oven": true, "oven_temp_f": 375}
+    ],
+    "tags": ["cookie", "bestseller"]
+  },
+  "lemon-blueberry-scones": {
+    "name": "Lemon Blueberry Scones",
+    "yield": {"count": 8, "unit": "scones", "weight_g": 110},
+    "ingredients": [
+      {"item": "ap-flour",         "qty": 320, "unit": "g"},
+      {"item": "granulated-sugar", "qty":  60, "unit": "g"},
+      {"item": "baking-powder",    "qty":  12, "unit": "g"},
+      {"item": "salt",             "qty":   3, "unit": "g"},
+      {"item": "butter",           "qty": 115, "unit": "g"},
+      {"item": "heavy-cream",      "qty": 180, "unit": "ml"},
+      {"item": "eggs",             "qty":   1, "unit": "each"},
+      {"item": "lemon",            "qty":   1, "unit": "each"},
+      {"item": "blueberries",      "qty": 150, "unit": "g"}
+    ],
+    "steps": [
+      {"name": "cut butter into flour", "duration_min": 8,  "active": true},
+      {"name": "fold wet + berries",    "duration_min": 6,  "active": true},
+      {"name": "shape + cut",           "duration_min": 8,  "active": true},
+      {"name": "chill",                 "duration_min": 20, "active": false},
+      {"name": "bake",                  "duration_min": 22, "active": false, "oven": true, "oven_temp_f": 400}
+    ],
+    "tags": ["pastry", "breakfast"]
+  },
+  "focaccia": {
+    "name": "Rosemary Olive Oil Focaccia",
+    "yield": {"count": 1, "unit": "tray", "weight_g": 850},
+    "ingredients": [
+      {"item": "bread-flour", "qty": 500, "unit": "g"},
+      {"item": "water",       "qty": 400, "unit": "ml"},
+      {"item": "olive-oil",   "qty":  60, "unit": "ml"},
+      {"item": "yeast",       "qty":   4, "unit": "g"},
+      {"item": "salt",        "qty":  10, "unit": "g"},
+      {"item": "rosemary",    "qty":   8, "unit": "g"}
+    ],
+    "steps": [
+      {"name": "mix",          "duration_min": 10, "active": true},
+      {"name": "bulk ferment", "duration_min": 180,"active": false},
+      {"name": "pan + dimple", "duration_min": 10, "active": true},
+      {"name": "second proof", "duration_min": 45, "active": false},
+      {"name": "bake",         "duration_min": 25, "active": false, "oven": true, "oven_temp_f": 450}
+    ],
+    "tags": ["bread", "savory"]
+  },
+  "brownies": {
+    "name": "Fudgy Cocoa Brownies",
+    "yield": {"count": 12, "unit": "squares", "weight_g": 90},
+    "ingredients": [
+      {"item": "butter",           "qty": 200, "unit": "g"},
+      {"item": "granulated-sugar", "qty": 300, "unit": "g"},
+      {"item": "cocoa-powder",     "qty":  90, "unit": "g"},
+      {"item": "eggs",             "qty":   3, "unit": "each"},
+      {"item": "vanilla",          "qty":   5, "unit": "ml"},
+      {"item": "ap-flour",         "qty": 100, "unit": "g"},
+      {"item": "salt",             "qty":   3, "unit": "g"},
+      {"item": "chocolate-chips",  "qty": 120, "unit": "g"}
+    ],
+    "steps": [
+      {"name": "melt butter + cocoa", "duration_min": 8,  "active": true},
+      {"name": "whisk in sugar+eggs", "duration_min": 6,  "active": true},
+      {"name": "fold flour",          "duration_min": 4,  "active": true},
+      {"name": "bake",                "duration_min": 28, "active": false, "oven": true, "oven_temp_f": 350}
+    ],
+    "tags": ["bar", "chocolate"]
+  },
+  "cinnamon-rolls": {
+    "name": "Overnight Cinnamon Rolls",
+    "yield": {"count": 9, "unit": "rolls", "weight_g": 130},
+    "ingredients": [
+      {"item": "ap-flour",         "qty": 500, "unit": "g"},
+      {"item": "milk",             "qty": 240, "unit": "ml"},
+      {"item": "butter",           "qty": 110, "unit": "g"},
+      {"item": "granulated-sugar", "qty":  60, "unit": "g"},
+      {"item": "brown-sugar",      "qty": 150, "unit": "g"},
+      {"item": "cinnamon",         "qty":  15, "unit": "g"},
+      {"item": "eggs",             "qty":   2, "unit": "each"},
+      {"item": "yeast",            "qty":   7, "unit": "g"},
+      {"item": "salt",             "qty":   6, "unit": "g"},
+      {"item": "powdered-sugar",   "qty": 150, "unit": "g"}
+    ],
+    "steps": [
+      {"name": "mix dough",      "duration_min": 15,  "active": true},
+      {"name": "first rise",     "duration_min": 90,  "active": false},
+      {"name": "roll + fill",    "duration_min": 20,  "active": true},
+      {"name": "overnight cold", "duration_min": 600, "active": false},
+      {"name": "warm proof",     "duration_min": 60,  "active": false},
+      {"name": "bake",           "duration_min": 25,  "active": false, "oven": true, "oven_temp_f": 350},
+      {"name": "glaze",          "duration_min": 5,   "active": true}
+    ],
+    "tags": ["pastry", "breakfast", "bestseller"]
+  }
+}

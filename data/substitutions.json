@@ -1,0 +1,40 @@
+{
+  "buttermilk": [
+    {"replacement": "milk + acid", "ratio": 1.0, "notes": "1 cup milk + 1 tbsp lemon juice or white vinegar, rest 5 min before using"},
+    {"replacement": "plain yogurt thinned with milk", "ratio": 1.0, "notes": "3/4 cup yogurt + 1/4 cup milk per cup"}
+  ],
+  "butter": [
+    {"replacement": "neutral oil", "ratio": 0.75, "notes": "Use 75% of the weight; expect a denser crumb, no creaming step"},
+    {"replacement": "coconut oil", "ratio": 1.0, "notes": "1:1 by weight; works best in chocolate-forward bakes"}
+  ],
+  "eggs": [
+    {"replacement": "flax egg", "ratio": 1.0, "notes": "Per egg: 1 tbsp ground flax + 3 tbsp water, rest 5 min. Best for cookies/quick breads"},
+    {"replacement": "applesauce", "ratio": 1.0, "notes": "1/4 cup per egg; adds moisture, good for muffins and cakes"}
+  ],
+  "milk": [
+    {"replacement": "oat milk", "ratio": 1.0, "notes": "1:1; closest match for dairy milk in pastries"},
+    {"replacement": "water + butter", "ratio": 1.0, "notes": "Per cup: 1 cup water + 1.5 tbsp butter"}
+  ],
+  "ap-flour": [
+    {"replacement": "1:1 gluten-free blend", "ratio": 1.0, "notes": "Use a blend with xanthan gum included for structure"},
+    {"replacement": "bread-flour", "ratio": 1.0, "notes": "Workable but chewier; reduce kneading"}
+  ],
+  "bread-flour": [
+    {"replacement": "ap-flour + vital wheat gluten", "ratio": 1.0, "notes": "Per cup AP add 1 tsp vital wheat gluten"}
+  ],
+  "granulated-sugar": [
+    {"replacement": "honey", "ratio": 0.75, "notes": "Use 75% by weight; reduce other liquid by 3 tbsp/cup and lower oven 25°F"},
+    {"replacement": "maple syrup", "ratio": 0.75, "notes": "Use 75% by weight; reduce other liquid by 3 tbsp/cup"}
+  ],
+  "baking-powder": [
+    {"replacement": "baking soda + cream of tartar", "ratio": 1.0, "notes": "Per tsp baking powder: 1/4 tsp baking soda + 1/2 tsp cream of tartar"}
+  ],
+  "chocolate-chips": [
+    {"replacement": "chopped chocolate bar", "ratio": 1.0, "notes": "1:1; melts more, gives layered pools"},
+    {"replacement": "cocoa nibs", "ratio": 0.6, "notes": "Use 60% by weight; intense bitter chocolate"}
+  ],
+  "blueberries": [
+    {"replacement": "raspberries", "ratio": 1.0, "notes": "1:1; toss in flour to prevent sinking"},
+    {"replacement": "diced apple + cinnamon", "ratio": 1.0, "notes": "Seasonal swap; add 1/4 tsp cinnamon per cup"}
+  ]
+}

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --crust: #8b4513;
+  --dough: #f5e6d3;
+  --char: #1a1410;
+  --butter: #f4d35e;
+}
+
+html, body {
+  background: #faf6f0;
+  color: var(--char);
+  font-family: ui-serif, Georgia, "Iowan Old Style", "Apple Garamond", serif;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-stone-200 bg-white/70 backdrop-blur px-5 py-4 shadow-sm;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full bg-stone-100 px-2.5 py-0.5 text-xs text-stone-600;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full bg-stone-900 px-4 py-2 text-sm font-medium text-stone-50 hover:bg-stone-800 disabled:opacity-50;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 hover:bg-stone-100;
+  }
+  .input {
+    @apply w-full rounded-xl border border-stone-300 bg-white px-3 py-2 text-sm focus:border-stone-900 focus:outline-none;
+  }
+}
