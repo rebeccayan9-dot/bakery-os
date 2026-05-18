@@ -1,12 +1,7 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
-
-const DATA_DIR = path.resolve(process.cwd(), "data");
-
-async function read<T>(name: string): Promise<T> {
-  const raw = await fs.readFile(path.join(DATA_DIR, `${name}.json`), "utf8");
-  return JSON.parse(raw) as T;
-}
+import recipesData from "../data/recipes.json";
+import inventoryData from "../data/inventory.json";
+import configData from "../data/config.json";
+import substitutionsData from "../data/substitutions.json";
 
 export type Ingredient = { item: string; qty: number; unit: string };
 export type Step = {
@@ -16,6 +11,7 @@ export type Step = {
   oven?: boolean;
   oven_temp_f?: number;
 };
+
 export type RecipeSource = {
   type: "youtube" | "photo";
   url?: string;
@@ -60,7 +56,7 @@ export type Substitution = {
 };
 export type Substitutions = Record<string, Substitution[]>;
 
-export const getRecipes = () => read<Recipes>("recipes");
-export const getInventory = () => read<Inventory>("inventory");
-export const getConfig = () => read<Config>("config");
-export const getSubstitutions = () => read<Substitutions>("substitutions");
+export const getRecipes = async (): Promise<Recipes> => recipesData as Recipes;
+export const getInventory = async (): Promise<Inventory> => inventoryData as Inventory;
+export const getConfig = async (): Promise<Config> => configData as Config;
+export const getSubstitutions = async (): Promise<Substitutions> => substitutionsData as Substitutions;
