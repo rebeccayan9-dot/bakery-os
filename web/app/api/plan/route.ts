@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { cli } from "@/lib/bakery";
+import { DEMO_MODE, demoBlocked } from "@/lib/demo";
 
 export async function POST(req: Request) {
+  if (DEMO_MODE) return demoBlocked();
   const { bakes } = await req.json();
   if (!Array.isArray(bakes) || bakes.length === 0) {
     return NextResponse.json({ error: "bakes required" }, { status: 400 });

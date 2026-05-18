@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { cli } from "@/lib/bakery";
+import { DEMO_MODE, demoBlocked } from "@/lib/demo";
 
-const REPO_ROOT = path.resolve(process.cwd(), "..");
-const RECIPES_PATH = path.join(REPO_ROOT, "data", "recipes.json");
+const RECIPES_PATH = path.join(process.cwd(), "data", "recipes.json");
 const UPLOADS_DIR = path.join(process.cwd(), "public", "uploads");
 
 function slugify(input: string): string {
@@ -32,6 +32,7 @@ async function writeRecipes(recipes: Record<string, any>): Promise<void> {
 }
 
 export async function POST(req: Request) {
+  if (DEMO_MODE) return demoBlocked();
   try {
     const contentType = req.headers.get("content-type") || "";
     const recipes = await readRecipes();

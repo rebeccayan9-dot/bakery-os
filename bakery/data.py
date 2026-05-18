@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = Path(os.environ.get("BAKERY_DATA", ROOT / "data"))
+DATA_DIR = Path(os.environ.get("BAKERY_DATA", ROOT / "web" / "data"))
 
 
 def _path(name: str) -> Path:

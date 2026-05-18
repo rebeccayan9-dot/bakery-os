@@ -3,11 +3,18 @@ import path from "node:path";
 
 const REPO_ROOT = path.resolve(process.cwd(), "..");
 
+export const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === "1";
+
 /**
  * Run the bakery Python CLI and return parsed JSON stdout.
  * Example: cli(["scale", "sourdough-loaf", "--count", "2"])
+ *
+ * Throws in DEMO_MODE so callers can return a friendly 503 instead.
  */
 export function cli(args: string[], stdinPayload?: unknown): Promise<unknown> {
+  if (DEMO_MODE) {
+    return Promise.reject(new Error("demo mode — interactive features disabled"));
+  }
   return new Promise((resolve, reject) => {
     const proc = spawn("python3", ["-m", "bakery", ...args], {
       cwd: REPO_ROOT,

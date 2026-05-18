@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getRecipes, getInventory } from "@/lib/data";
 import { HomeRecipeCapture } from "./HomeRecipeCapture";
+import { DEMO_MODE } from "@/lib/demo";
 
 export default async function HomePage() {
   const [recipes, inventory] = await Promise.all([getRecipes(), getInventory()]);
@@ -23,7 +24,7 @@ export default async function HomePage() {
         </p>
       </section>
 
-      <HomeRecipeCapture />
+      {!DEMO_MODE && <HomeRecipeCapture />}
 
       <section className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
         <QuickCard href="/plan" title="Plan a bake" hint="Schedule backward from a target time" />

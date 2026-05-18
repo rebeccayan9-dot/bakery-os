@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { cli } from "@/lib/bakery";
+import { DEMO_MODE, demoBlocked } from "@/lib/demo";
 
 export async function POST(req: Request) {
+  if (DEMO_MODE) return demoBlocked();
   const { url, lang } = await req.json();
   if (!url) return NextResponse.json({ error: "url required" }, { status: 400 });
   const args = ["youtube", url];

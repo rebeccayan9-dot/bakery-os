@@ -1,7 +1,7 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
-const DATA_DIR = path.resolve(process.cwd(), "..", "data");
+const DATA_DIR = path.resolve(process.cwd(), "data");
 
 async function read<T>(name: string): Promise<T> {
   const raw = await fs.readFile(path.join(DATA_DIR, `${name}.json`), "utf8");

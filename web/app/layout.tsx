@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DemoBanner } from "./DemoBanner";
 
 export const metadata: Metadata = {
   title: "Bakery OS",
@@ -39,7 +40,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ))}
             </nav>
           </header>
-          <main>{children}</main>
+          <main>
+            <DemoBanner />
+            {children}
+          </main>
           <footer className="mt-16 border-t border-stone-200 pt-6 text-xs text-stone-400">
             <p>Bakery OS · agentic skills + Next.js · personal use only</p>
           </footer>

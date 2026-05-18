@@ -17,7 +17,8 @@
       {"name": "cold proof",   "duration_min": 720, "active": false},
       {"name": "bake",         "duration_min": 45,  "active": false, "oven": true, "oven_temp_f": 475}
     ],
-    "tags": ["bread", "sourdough", "signature"]
+    "tags": ["bread", "sourdough", "signature"],
+    "featured": true
   },
   "chocolate-chip-cookies": {
     "name": "Brown Butter Chocolate Chip Cookies",
@@ -41,7 +42,8 @@
       {"name": "portion",      "duration_min": 10, "active": true},
       {"name": "bake",         "duration_min": 14, "active": false, "oven": true, "oven_temp_f": 375}
     ],
-    "tags": ["cookie", "bestseller"]
+    "tags": ["cookie", "bestseller"],
+    "featured": true
   },
   "lemon-blueberry-scones": {
     "name": "Lemon Blueberry Scones",
@@ -131,6 +133,7 @@
       {"name": "bake",           "duration_min": 25,  "active": false, "oven": true, "oven_temp_f": 350},
       {"name": "glaze",          "duration_min": 5,   "active": true}
     ],
-    "tags": ["pastry", "breakfast", "bestseller"]
+    "tags": ["pastry", "breakfast", "bestseller"],
+    "featured": true
   }
 }
